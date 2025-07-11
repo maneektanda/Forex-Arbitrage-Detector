@@ -1,9 +1,3 @@
-
-
-
-
-
-
 # #################################### Background Information and Inspiration ####################################
 
 # The Bellman-Ford algorithm can be used to find the shortest path from a starting node to all other nodes within
