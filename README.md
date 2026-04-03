@@ -1,5 +1,5 @@
 
-                                        Background Information and Inspiration
+                                    Background Information and Inspiration
 
 The Bellman-Ford algorithm can be used to find the shortest path from a starting node to all other nodes within
 a weighted, directed graph. However, where a graph contains a negative edge cycle, the result is meaningless.
@@ -32,13 +32,13 @@ rates will successfully detect an arbitrage oppotunity.
 
 
 
-                                    Custom algorithm for identifying arbitrage
+                                Custom algorithm for identifying arbitrage
 
 While a method already exists to locate the path of a negative edge cycle found when using the Bellman-Ford
 algorithm, I wanted to test a theory of my own. I have implemented this theory in a function called 'arbitrage_path'.
 
 
-                                                    The Theory
+                                                The Theory
 
 Suppose a negative edge cycle is detected in a graph. If one of the nodes in that cycle, as well as all edges
 connected to that node, is excluded, then the cycle will no longer be present. The 'arbitrage_path' function
@@ -49,7 +49,7 @@ nodes to be made that form the negative edge cycle. This list represents the exc
 arbitrage opportunity.
 
 
-                                              Recognising Limitations
+                                          Recognising Limitations
 
 Before completing this function, I realised some limitations.
 
