@@ -32,7 +32,7 @@ rates will successfully detect an arbitrage oppotunity.
 
 
 
-                            Custom algorithm for identifying arbitrage
+                            Custom Algorithm For Identifying Arbitrage
 
 While a method already exists to locate the path of a negative edge cycle found when using the Bellman-Ford
 algorithm, I wanted to test a theory of my own. I have implemented this theory in a function called 'arbitrage_path'.
