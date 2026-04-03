@@ -1,5 +1,6 @@
+<h1 align="center">Forex Arbitrage Detector</h1>
 
-                                Background Information and Inspiration
+<h3><li>Background Information and Inspiration</li></h3>
 
 The Bellman-Ford algorithm can be used to find the shortest path from a starting node to all other nodes within
 a weighted, directed graph. However, where a graph contains a negative edge cycle, the result is meaningless.
@@ -27,18 +28,15 @@ So if we take the natural log of the exchange rates, an arbitrage opportunity ex
 than 0. If we were to apply Bellman-Ford to the natural log of the exchange rates, the negative edge cycles found
 would just represent transactions where money is lost. Therefore, taking the negative natural log of the exchange
 rates will successfully detect an arbitrage oppotunity.
+<br>
 
 
-
-
-
-                            Custom Algorithm For Identifying Arbitrage
+<h2 align="center">Custom Algorithm For Identifying Arbitrage</h2>
 
 While a method already exists to locate the path of a negative edge cycle found when using the Bellman-Ford
 algorithm, I wanted to test a theory of my own. I have implemented this theory in a function called 'arbitrage_path'.
 
-
-                                            The Theory
+<h3><li>The Theory</li></h3>                   
 
 Suppose a negative edge cycle is detected in a graph. If one of the nodes in that cycle, as well as all edges
 connected to that node, is excluded, then the cycle will no longer be present. The 'arbitrage_path' function
@@ -48,20 +46,13 @@ that node must have been in the negative edge cycle. Iteratively excluding all o
 nodes to be made that form the negative edge cycle. This list represents the exchange rates that create the
 arbitrage opportunity.
 
-
-                                      Recognising Limitations
-
+<h3><li>Recognising Limitations</li></h3>
+                                      
 Before completing this function, I realised some limitations.
 
-Firstly, this logic only works when only one cycle is present. Two individual negative edge cycles that do not
-affect each other will clearly not be detected by this logic.
-
-Secondly, the time complexity of this solution is very slow, as you have to run the Bellman_Ford algorithm for
-however many nodes are in the graph.
-
-Thirdly, I have made the assumption that finding the exact path in a forex setting is not necessarily that
-important, because I don't expect there to be too many oppotunites of a long enough length, that the path can't
-be found intuitively once the nodes have been identified.
+  - Firstly, this logic only works when only one cycle is present. Two individual negative edge cycles that do not affect each other will clearly not be detected by this logic.
+  - Secondly, the time complexity of this solution is very slow, as you have to run the Bellman_Ford algorithm for however many nodes are in the graph.
+  - Thirdly, I have made the assumption that finding the exact path in a forex setting is not necessarily that important, because I don't expect there to be too many oppotunites of a long enough length, that the path can't be found intuitively once the nodes have been identified.
 
 Despite becoming aware of these limitations, I still thought this would be a great learning experience and
 foundational project in the early stages of my career. I have been able to turn an intuitive thought, into
