@@ -57,3 +57,15 @@ Before completing this function, I realised some limitations.
 Despite becoming aware of these limitations, I still thought this would be a great learning experience and
 foundational project in the early stages of my career. I have been able to turn an intuitive thought, into
 actual implemented code.
+
+<h3><li>Getting Started</li></h3>
+
+1. Clone the repository-<br>
+```sh
+git clone https://github.com/maneektanda/Forex-Arbitrage-Detector.git
+```
+2. Run the project-<br>
+```sh
+python3 "Forex Arbitrage Detector.py"
+```
+
