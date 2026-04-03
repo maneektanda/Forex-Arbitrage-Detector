@@ -1,15 +1,14 @@
-########################## Background Information and Inspiration ##########################
+                            Background Information and Inspiration
 
 The Bellman-Ford algorithm can be used to find the shortest path from a starting node to all other nodes within
 a weighted, directed graph. However, where a graph contains a negative edge cycle, the result is meaningless.
 This algorithm can be modified to test for, and identify negative edge cycles. In a financial context such as
 foreign exchange rates, negative edge cycles can be used to identify arbitrage oppotunites.
 
-To detect an arbitrage opportunity amongst foreign exchange rates, the product of the rates must be greater than
-1. The Bellman-Ford algorithm is not directly applicable here, as its logic is based off of the summation of edge
+To detect an arbitrage opportunity amongst foreign exchange rates, the product of the rates must be greater than 1. 
+The Bellman-Ford algorithm is not directly applicable here, as its logic is based off of the summation of edge
 weights. A conversion of some sort needs to happen, so that the product relationship can be expressed as a sum
-relationship.
-The solution for this problem is not my own and was learned from online materials.
+relationship. The solution for this problem is not my own and was learned from online materials.
 
 Observe the following-
 
@@ -30,12 +29,12 @@ rates will successfully detect an arbitrage oppotunity.
 
 
 
-################################# Custom algorithm for identifying arbitrage  #################################
+                         Custom algorithm for identifying arbitrage
 
 While a method already exists to locate the path of a negative edge cycle found when using the Bellman-Ford
 algorithm, I wanted to test a theory of my own. I have implemented this theory in a function called 'arbitrage_path'.
 
-################################################# The Theory ###################################################
+                                        The Theory
 
 Suppose a negative edge cycle is detected in a graph. If one of the nodes in that cycle, as well as all edges
 connected to that node, is excluded, then the cycle will no longer be present. The 'arbitrage_path' function
@@ -45,7 +44,7 @@ that node must have been in the negative edge cycle. Iteratively excluding all o
 nodes to be made that form the negative edge cycle. This list represents the exchange rates that create the
 arbitrage opportunity.
 
-########################################### Recognising Limitations ############################################
+                                  Recognising Limitations
 
 Before completing this function, I realised some limitations.
 
