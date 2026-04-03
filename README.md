@@ -1,4 +1,4 @@
-#################################### Background Information and Inspiration ####################################
+########################## Background Information and Inspiration ##########################
 
 The Bellman-Ford algorithm can be used to find the shortest path from a starting node to all other nodes within
 a weighted, directed graph. However, where a graph contains a negative edge cycle, the result is meaningless.
