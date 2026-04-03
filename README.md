@@ -58,7 +58,7 @@ Despite becoming aware of these limitations, I still thought this would be a gre
 foundational project in the early stages of my career. I have been able to turn an intuitive thought, into
 actual implemented code.
 
-<h3><li>Getting Started</li></h3>
+<h3>Getting Started</h3>
 
 1. Clone the repository-<br>
 ```sh
